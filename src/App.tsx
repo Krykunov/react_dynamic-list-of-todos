@@ -14,7 +14,6 @@ import { getTodos } from './api';
 export const App: React.FC = () => {
   const [selectedTodo, setSelectedTodo] = useState<Todo | null>(null);
   const [todos, setTodos] = useState<Todo[]>([]);
-  // const [filteredTodos, setFilteredTodos] = useState<Todo[]>([]);
   const [search, setSearch] = useState<string>('');
   const [status, setStatus] = useState<string>('all');
   const [errorMessage, setErrorMessage] = useState<string>('');
